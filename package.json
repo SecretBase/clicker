@@ -1,0 +1,16 @@
+{
+  "name": "counter-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel serve ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.1"
+  },
+  "browserslist": "> 0.2%"
+}
