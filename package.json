@@ -5,12 +5,29 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel serve ./index.html",
-    "build": "parcel build ./index.html"
+    "prebuild": "rm -rf dist",
+    "build": "parcel build ./index.html",
+    "build:production": "NODE_ENV=production npm run build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.0.0-beta.1"
+    "parcel": "^2.0.0-beta.1",
+    "rxjs": "^6.6.3"
   },
-  "browserslist": "> 0.2%"
+  "browserslist": "> 0.2%",
+  "targets": {
+    "app": {
+      "engines": {
+        "browsers": "> 0.25%"
+      },
+      "distDir": "./dist"
+    },
+    "appModern": {
+      "engines": {
+        "browsers": "Chrome 70"
+      },
+      "distDir": "./dist"
+    }
+  }
 }
